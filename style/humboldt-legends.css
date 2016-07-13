@@ -27,40 +27,18 @@
     height: 220px;
     width: auto;
 }
-.btn-primary {
-    color: #c8ae53;
-    background-color: rgba(255,255,255,0);
-    border-color: #c8ae53;
-}
 .btn-white {
     color: white;
     background-color: rgba(255,255,255,0);
     border-color: white;
 }
-.btn-white-gold {
-    color: white;
-    background-color: rgba(255,255,255,0);
-    border-color: #c8ae53;
+.btn:hover, .btn:focus, .btn:active, .btn.active  {
+    background-color: white;
+    color: #c8ae53;
+    border-color: white;
 }
-.btn:hover {
-    color: white;
-    background-color: #3b5e54;
-    border-color: #3b5e54;
-}
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
-    background-color: rgba(200,174,83,.8);
-    color: white;
-    border-color:#c8ae53;
-}
-.btn-white:hover, .btn-white:focus, .btn-white:active, .btn-white.active, .open > .dropdown-toggle.btn-white {
-    background-color: rgba(255,255,255,.8);;
-    color: #004c62;
-    border-color:white;
-}
-.btn-white-gold:hover, .btn-white-gold:focus, .btn-white-gold:active, .btn-white-gold.active, .open > .dropdown-toggle.btn-white-gold {
-    background-color: rgba(200,174,83,.8);
-    color: white;
-    border-color:#c8ae53;
+.nounderline {
+    text-decoration: none
 }
 @media (max-width: 768px) {
     .set-dim {
@@ -71,31 +49,9 @@
 .white {
     color: white;
 }
-
-/* Backgrounds */
-.bg {
-    min-height: 200px;
-}
-.orange-bg {
-    background-color: #f55704;
-}
 .gold-bg {
     background-color: #c8ae53;
 }
-.blue-bg {
-    background-color: #004c62;
-}
-.green-bg {
-    background-color: #325d4f;
-}
-.mint-bg {
-    background-color: #98ccc8;
-}
-.cream-bg {
-    background-color: #f6f7f0;
-}
-
-
 body {
     font-size: 100%;
     color: #1E5155;
@@ -136,7 +92,6 @@ body {
         float: none;
         vertical-align: top;
     }
-
     .navbar .navbar-collapse {
         text-align: center;
     }
@@ -162,41 +117,41 @@ h1 {
         /* keep to a multiple of the 20px line height and something more appropriate for display headings */
     }
 }
-h2, .btn {
+h2 {
     font-size: 1.625em;
     /* 1.625x body copy size = 26px */
     line-height: 1.15384615;
     /* 30px / 26px */
 }
 @media (min-width: 43.75em) {
-    h2, .btn {
+    h2 {
         font-size: 2em;
         /* 2x body copy size = 32px */
         line-height: 1.25;
     }
 }
 @media (min-width: 56.25em) {
-    h2, .btn {
+    h2 {
         font-size: 2.25em;
         /* 2.25x body copy size = 36px */
         line-height: 1.25;
     }
 }
-h3 {
+h3, .btn {
     font-size: 1.375em;
     /* 1.375x body copy size = 22px */
     line-height: 1.13636364;
     /* 25px / 22px */
 }
 @media (min-width: 43.75em) {
-    h3 {
+    h3,.btn {
         font-size: 1.5em;
         /* 1.5x body copy size = 24px */
         line-height: 1.25;
     }
 }
 @media (min-width: 56.25em) {
-    h3 {
+    h3, .btn {
         font-size: 1.75em;
         /* 1.75x body copy size = 28px */
         line-height: 1.25;
@@ -222,19 +177,11 @@ h4 {
     }
 }
 a {
-    color: #004c62;
     text-decoration: none;
 }
 a:hover {
-    color: black;
     text-decoration: none;
 }
-
-a:hover, a:visited, a:active {
-}
-
-
-
 h1, h2, h3, h4 {
     text-align: center;
 }
@@ -251,9 +198,9 @@ hr {
 .sans-serif {
     font-family: Brown-Regular;
 }
-.content {
-    text-align: center;
-}
+/*.content {*/
+    /*text-align: center;*/
+/*}*/
 .underline {
     border-bottom: solid 1px #c8ae53;
     display: inline;
@@ -288,18 +235,11 @@ hr {
         height: 23vh;
     }
 }
-
-
-
-
-
-
 .img-circle {
     border-radius: 50%;
     height: 60px;
     width: 60px;
 }
-
 .gold {
     color: #c8ae53;
 }
@@ -321,6 +261,15 @@ hr {
 .m-top {
     margin-top: 60px;
 }
+.m-bottom-1 {
+    margin-bottom: 30px;
+}
+.m-top-0 {
+    margin-top: 15px;
+}
+.m-top-1 {
+    margin-top: 30px;
+}
 .m-top-2 {
     margin-top: 100px;
 }
@@ -328,13 +277,6 @@ hr {
     margin-top: 80px;
     margin-bottom: 80px;
 }
-
-
-
-
-
-
-
 .carousel-indicators li, .carousel-indicators .active{
     width: 60px;
     border: 1px solid #f6f7f0;
@@ -342,5 +284,3 @@ hr {
 .carousel-indicators .active{
     background-color: #f6f7f0;
 }
-
-
